@@ -13,12 +13,21 @@
 <body>
 
     <!-- Video -->
-    <h2 class="title">Flink</h2>
+    <div class="title-container">
+        <h2 class="title">Flink</h2>
+        <p class="description">
+            This project utilized the Picture-In-Picture API.
+            Basically it allows you to watch video while you were working/studying :)
+        </p>
+    </div>
+    <div class="video-container">
     <video id="video" controls height="350px" width="640" hidden></video>
+    </div>
 
     <!-- button -->
     <div class="btn-container">
-        <button id="btn">Start</button>
+        <button id="load-video">Choose stream</button>
+        <button id="btn">Start PIP</button>
     </div>
 
 <!-- Script -->

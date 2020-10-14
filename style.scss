@@ -1,6 +1,8 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+$font: 'Oswald';
 
+$bg-color: #715EEC;
 //reset style
 *,
 *::after,
@@ -15,18 +17,64 @@ html{
 }
 //structure
 
-body{
-    box-sizing: border-box;
-}
 
 body{
-  font-family:,serif;
+  box-sizing: border-box;
+  font-family: $font,serif;
   font-weight: 400;
   line-height: 1.7;
-  color:#000;
+  color:#fff;
+  background-color: $bg-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
   padding: 3rem;
 }
 
+.title-container{
+  width: 60rem;
+  margin-bottom: 1.5rem;
+}
 .title{
-    
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.description{
+  font-size: 2rem;
+}
+
+.btn-container{
+  display: inline-flex;
+  padding: 1.2rem;
+  border-radius: 3px;
+  // box-shadow: inset 0 20px 4px -19px rgba(#1b065e, 0.7);
+}
+
+button{
+  cursor: pointer;
+  outline: none;
+  width: 12rem;
+  height: 75px;
+  font-family: inherit;
+  font-size:2.5rem;
+  color: #fff;
+  text-shadow: 0 2px 5px #000;
+  background: linear-gradient(to top, $bg-color, #1b065e);
+  border-radius: 4px;
+  box-shadow: inset 0 20px 4px -19px rgba(#1b065e, 0.4), 0 12px 12px 0 rgba(#000, 0.3);
+  transition: all .3s;
+
+  &:hover{
+    background: linear-gradient(to bottom, $bg-color, #1b065e);
+  }
+
+  &:active{
+    transform: translateY(4px);
+    box-shadow: 0 6px 6px 0 (rgba(#000, 0.3));
+  }
 }
