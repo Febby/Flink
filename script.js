@@ -18,6 +18,7 @@ async function selectMediaStream(){
     }
 }
 
+loadButton.addEventListener('click', () => {selectMediaStream();})
 
 PipButton.addEventListener('click', async () => {
     //disable button
@@ -29,4 +30,3 @@ PipButton.addEventListener('click', async () => {
 });
 //on Load
 
-loadButton.addEventListener('click', () => {selectMediaStream();})
